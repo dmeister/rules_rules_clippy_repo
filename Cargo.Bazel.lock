@@ -1,5 +1,5 @@
 {
-  "checksum": "5101de406738b1a866c7a73a01eba7fdc5c4e5594fceee15afd1ac4530ecf992",
+  "checksum": "d59864252c05f36c0b10e1adf2664a6e6512f0c1810ffc9af4753febfdbe8521",
   "crates": {
     "actix-codec 0.5.1": {
       "name": "actix-codec",
@@ -7216,10 +7216,6 @@
               "target": "actix_web"
             },
             {
-              "id": "async-lock 2.8.0",
-              "target": "async_lock"
-            },
-            {
               "id": "async-rwlock 1.3.0",
               "target": "async_rwlock"
             },
@@ -7246,10 +7242,6 @@
             {
               "id": "launchdarkly-server-sdk 1.1.3",
               "target": "launchdarkly_server_sdk"
-            },
-            {
-              "id": "lazy_static 1.4.0",
-              "target": "lazy_static"
             },
             {
               "id": "log 0.4.20",
@@ -7300,10 +7292,6 @@
               "target": "serde_json"
             },
             {
-              "id": "sha256 1.5.0",
-              "target": "sha256"
-            },
-            {
               "id": "tokio 1.35.1",
               "target": "tokio"
             },
@@ -7342,10 +7330,6 @@
             {
               "id": "tracing-subscriber 0.3.18",
               "target": "tracing_subscriber"
-            },
-            {
-              "id": "uuid 1.6.1",
-              "target": "uuid"
             }
           ],
           "selects": {}
@@ -16842,124 +16826,6 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "sha2 0.10.8": {
-      "name": "sha2",
-      "version": "0.10.8",
-      "repository": {
-        "Http": {
-          "url": "https://crates.io/api/v1/crates/sha2/0.10.8/download",
-          "sha256": "793db75ad2bcafc3ffa7c68b215fee268f537982cd901d132f89c6343f3a3dc8"
-        }
-      },
-      "targets": [
-        {
-          "Library": {
-            "crate_name": "sha2",
-            "crate_root": "src/lib.rs",
-            "srcs": [
-              "**/*.rs"
-            ]
-          }
-        }
-      ],
-      "library_target_name": "sha2",
-      "common_attrs": {
-        "compile_data_glob": [
-          "**"
-        ],
-        "deps": {
-          "common": [
-            {
-              "id": "cfg-if 1.0.0",
-              "target": "cfg_if"
-            },
-            {
-              "id": "digest 0.10.7",
-              "target": "digest"
-            }
-          ],
-          "selects": {
-            "cfg(any(target_arch = \"aarch64\", target_arch = \"x86_64\", target_arch = \"x86\"))": [
-              {
-                "id": "cpufeatures 0.2.12",
-                "target": "cpufeatures"
-              }
-            ]
-          }
-        },
-        "edition": "2018",
-        "version": "0.10.8"
-      },
-      "license": "MIT OR Apache-2.0"
-    },
-    "sha256 1.5.0": {
-      "name": "sha256",
-      "version": "1.5.0",
-      "repository": {
-        "Http": {
-          "url": "https://crates.io/api/v1/crates/sha256/1.5.0/download",
-          "sha256": "18278f6a914fa3070aa316493f7d2ddfb9ac86ebc06fa3b83bffda487e9065b0"
-        }
-      },
-      "targets": [
-        {
-          "Library": {
-            "crate_name": "sha256",
-            "crate_root": "src/lib.rs",
-            "srcs": [
-              "**/*.rs"
-            ]
-          }
-        }
-      ],
-      "library_target_name": "sha256",
-      "common_attrs": {
-        "compile_data_glob": [
-          "**"
-        ],
-        "crate_features": {
-          "common": [
-            "async",
-            "default",
-            "tokio"
-          ],
-          "selects": {}
-        },
-        "deps": {
-          "common": [
-            {
-              "id": "bytes 1.5.0",
-              "target": "bytes"
-            },
-            {
-              "id": "hex 0.4.3",
-              "target": "hex"
-            },
-            {
-              "id": "sha2 0.10.8",
-              "target": "sha2"
-            },
-            {
-              "id": "tokio 1.35.1",
-              "target": "tokio"
-            }
-          ],
-          "selects": {}
-        },
-        "edition": "2018",
-        "proc_macro_deps": {
-          "common": [
-            {
-              "id": "async-trait 0.1.77",
-              "target": "async_trait"
-            }
-          ],
-          "selects": {}
-        },
-        "version": "1.5.0"
-      },
-      "license": "MIT OR Apache-2.0"
-    },
     "sharded-slab 0.1.7": {
       "name": "sharded-slab",
       "version": "0.1.7",
@@ -20413,9 +20279,7 @@
         "crate_features": {
           "common": [
             "default",
-            "fast-rng",
             "getrandom",
-            "rand",
             "rng",
             "std",
             "v4"
@@ -20427,10 +20291,6 @@
             {
               "id": "getrandom 0.2.12",
               "target": "getrandom"
-            },
-            {
-              "id": "rand 0.8.5",
-              "target": "rand"
             }
           ],
           "selects": {}
@@ -23743,31 +23603,6 @@
       "x86_64-unknown-nixos-gnu",
       "x86_64-unknown-none"
     ],
-    "cfg(any(target_arch = \"aarch64\", target_arch = \"x86_64\", target_arch = \"x86\"))": [
-      "aarch64-apple-darwin",
-      "aarch64-apple-ios",
-      "aarch64-apple-ios-sim",
-      "aarch64-fuchsia",
-      "aarch64-linux-android",
-      "aarch64-pc-windows-msvc",
-      "aarch64-unknown-linux-gnu",
-      "aarch64-unknown-nixos-gnu",
-      "aarch64-unknown-nto-qnx710",
-      "i686-apple-darwin",
-      "i686-linux-android",
-      "i686-pc-windows-msvc",
-      "i686-unknown-freebsd",
-      "i686-unknown-linux-gnu",
-      "x86_64-apple-darwin",
-      "x86_64-apple-ios",
-      "x86_64-fuchsia",
-      "x86_64-linux-android",
-      "x86_64-pc-windows-msvc",
-      "x86_64-unknown-freebsd",
-      "x86_64-unknown-linux-gnu",
-      "x86_64-unknown-nixos-gnu",
-      "x86_64-unknown-none"
-    ],
     "cfg(any(target_arch = \"x86\", target_arch = \"x86_64\", all(any(target_arch = \"aarch64\", target_arch = \"arm\"), any(target_os = \"android\", target_os = \"fuchsia\", target_os = \"linux\"))))": [
       "aarch64-fuchsia",
       "aarch64-linux-android",
@@ -24327,7 +24162,6 @@
   },
   "direct_deps": [
     "actix-web 4.4.1",
-    "async-lock 2.8.0",
     "async-rwlock 1.3.0",
     "async-trait 0.1.77",
     "futures 0.3.30",
@@ -24335,7 +24169,6 @@
     "k8s-openapi 0.18.0",
     "kube 0.82.2",
     "launchdarkly-server-sdk 1.1.3",
-    "lazy_static 1.4.0",
     "log 0.4.20",
     "native-tls 0.2.11",
     "openssl 0.10.62",
@@ -24348,7 +24181,6 @@
     "schemars 0.8.16",
     "serde 1.0.195",
     "serde_json 1.0.111",
-    "sha256 1.5.0",
     "tokio 1.35.1",
     "tonic 0.9.2",
     "tonic-build 0.9.2",
@@ -24358,8 +24190,7 @@
     "tracing-log 0.2.0",
     "tracing-logfmt 0.3.3",
     "tracing-opentelemetry 0.19.0",
-    "tracing-subscriber 0.3.18",
-    "uuid 1.6.1"
+    "tracing-subscriber 0.3.18"
   ],
   "direct_dev_deps": [
     "actix-rt 2.9.0",
