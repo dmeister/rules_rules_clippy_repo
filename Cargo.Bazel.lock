@@ -1,5 +1,5 @@
 {
-  "checksum": "38459ddd401a63f20432933660668172f1b3625eff4f645a9e2df548893b02ee",
+  "checksum": "3b9064d904f52c3f344167e989f622eae48d1c1920b18d9617995f05c72ff212",
   "crates": {
     "addr2line 0.21.0": {
       "name": "addr2line",
@@ -5738,10 +5738,6 @@
               "target": "launchdarkly_server_sdk"
             },
             {
-              "id": "log 0.4.20",
-              "target": "log"
-            },
-            {
               "id": "native-tls 0.2.11",
               "target": "native_tls"
             },
@@ -5776,14 +5772,6 @@
             {
               "id": "schemars 0.8.16",
               "target": "schemars"
-            },
-            {
-              "id": "serde 1.0.195",
-              "target": "serde"
-            },
-            {
-              "id": "serde_json 1.0.111",
-              "target": "serde_json"
             },
             {
               "id": "tokio 1.35.1",
@@ -22114,7 +22102,6 @@
     "k8s-openapi 0.18.0",
     "kube 0.82.2",
     "launchdarkly-server-sdk 1.1.3",
-    "log 0.4.20",
     "native-tls 0.2.11",
     "openssl 0.10.62",
     "opentelemetry 0.19.0",
@@ -22124,8 +22111,6 @@
     "prost 0.11.9",
     "prost-types 0.11.9",
     "schemars 0.8.16",
-    "serde 1.0.195",
-    "serde_json 1.0.111",
     "tokio 1.35.1",
     "tonic 0.9.2",
     "tonic-build 0.9.2",
