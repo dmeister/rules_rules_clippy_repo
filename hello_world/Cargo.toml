@@ -20,7 +20,7 @@ async-rwlock = "*"
 # appears to be required
 itertools = "*"
 # appears to be required
-prometheus = { version = "0.13.3", features = ["process"] }
+prometheus = { version = "*", features = ["process"] }
 tracing = {version = "*"}
 tracing-subscriber = {version = "*", features = ["env-filter"]}
 tracing-logfmt = "*"
@@ -30,7 +30,7 @@ prost = "0.11"
 # appears to be required
 prost-types = "0.11"
 kube = { version = "0.82.2", features = ["runtime", "derive"] }
-k8s-openapi = { version = "0.18.0", features = ["v1_23"] }
+k8s-openapi = { version = "*", features = ["v1_23"] }
 # appears to be required
 schemars = "0.8.12"
 opentelemetry = { version = "0.19.0", features = ["rt-tokio", "rt-async-std"] }
