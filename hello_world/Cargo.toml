@@ -16,6 +16,7 @@ log = "*"
 futures = "*"
 async-rwlock = "*"
 itertools = "*"
+# appears to be required
 prometheus = { version = "0.13.3", features = ["process"] }
 tracing = {version = "*", features = ["log"]}
 tracing-subscriber = {version = "*", features = ["registry", "env-filter"]}
