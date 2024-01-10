@@ -1110,8 +1110,6 @@ dependencies = [
  "k8s-openapi",
  "kube",
  "launchdarkly-server-sdk",
- "native-tls",
- "openssl",
  "opentelemetry",
  "opentelemetry-otlp",
  "opentelemetry_sdk",
@@ -1123,7 +1121,6 @@ dependencies = [
  "tonic 0.9.2",
  "tonic-build",
  "tonic-health",
- "tower",
  "tracing",
  "tracing-log 0.2.0",
  "tracing-logfmt",
@@ -1763,24 +1760,6 @@ name = "multimap"
 version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e5ce46fe64a9d73be07dcbe690a38ce1b293be448fd8ce1e6c1b8062c9f72c6a"
-
-[[package]]
-name = "native-tls"
-version = "0.2.11"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "07226173c32f2926027b63cce4bcd8076c3552846cbe7925f3aaffeac0a3b92e"
-dependencies = [
- "lazy_static",
- "libc",
- "log",
- "openssl",
- "openssl-probe",
- "openssl-sys",
- "schannel",
- "security-framework",
- "security-framework-sys",
- "tempfile",
-]
 
 [[package]]
 name = "nu-ansi-term"
