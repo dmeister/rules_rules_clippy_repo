@@ -6,6 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# removing any of the features makes it pass
 tonic = { version = "0.9", features = ["tls", "gzip"] }
 # appears to be required
 tonic-build = "0.9"
@@ -20,7 +21,7 @@ async-rwlock = "*"
 itertools = "*"
 # appears to be required
 prometheus = { version = "0.13.3", features = ["process"] }
-tracing = {version = "*", features = ["log"]}
+tracing = {version = "*"}
 tracing-subscriber = {version = "*", features = ["registry", "env-filter"]}
 tracing-logfmt = "*"
 tracing-log = "*"
@@ -36,7 +37,7 @@ opentelemetry = { version = "0.19.0", features = ["rt-tokio", "rt-async-std"] }
 # appears to be required
 opentelemetry-otlp = "0.12"
 tracing-opentelemetry = "0.19.0"
-opentelemetry_sdk = { version = "0.19.0", features = ["rt-tokio", "rt-async-std"] }
+opentelemetry_sdk = { version = "0.19.0" }
 tonic-health = "0.9"
 # appears to be required
 launchdarkly-server-sdk = "*"
