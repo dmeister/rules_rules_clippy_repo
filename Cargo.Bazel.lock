@@ -1,5 +1,5 @@
 {
-  "checksum": "886a7b08f5e20504b14c2dbff88e032a88835aa937af2015f3fbfe6002f66b7b",
+  "checksum": "140254c28027650e8851884800e24b82ab2d3e6ee06611511b4dc0f9376158fb",
   "crates": {
     "addr2line 0.21.0": {
       "name": "addr2line",
@@ -16659,8 +16659,6 @@
             "gzip",
             "prost",
             "tls",
-            "tls-roots",
-            "tls-roots-common",
             "transport"
           ],
           "selects": {}
@@ -16726,10 +16724,6 @@
             {
               "id": "prost 0.11.9",
               "target": "prost"
-            },
-            {
-              "id": "rustls-native-certs 0.6.3",
-              "target": "rustls_native_certs"
             },
             {
               "id": "rustls-pemfile 1.0.4",
