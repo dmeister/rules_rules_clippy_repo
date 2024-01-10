@@ -1,5 +1,5 @@
 {
-  "checksum": "324bdc8c61b8d831770cf9003e545d12c7a85bf4548200ca18fe51d2477df0d2",
+  "checksum": "ce5d4c53526f9134372af62877bbb0a56266a39c2fd7c2c4eb84583cbcfe8f30",
   "crates": {
     "addr2line 0.21.0": {
       "name": "addr2line",
@@ -15915,8 +15915,6 @@
           "common": [
             "bytes",
             "default",
-            "fs",
-            "full",
             "io-std",
             "io-util",
             "libc",
@@ -15924,8 +15922,6 @@
             "mio",
             "net",
             "num_cpus",
-            "parking_lot",
-            "process",
             "rt",
             "rt-multi-thread",
             "signal",
@@ -15960,10 +15956,6 @@
             {
               "id": "num_cpus 1.16.0",
               "target": "num_cpus"
-            },
-            {
-              "id": "parking_lot 0.12.1",
-              "target": "parking_lot"
             },
             {
               "id": "pin-project-lite 0.2.13",

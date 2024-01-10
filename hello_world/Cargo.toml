@@ -12,7 +12,7 @@ tonic = { version = "0.9", features = ["tls", "gzip"] }
 tonic-build = "0.9"
 # appears to be required
 async-trait = "*"
-tokio = { version = "1.35", features = ["full"] }
+tokio = { version = "1.35" }
 # appears to be required
 futures = "*"
 # appears to be required
@@ -22,7 +22,7 @@ itertools = "*"
 # appears to be required
 prometheus = { version = "0.13.3", features = ["process"] }
 tracing = {version = "*"}
-tracing-subscriber = {version = "*", features = ["registry", "env-filter"]}
+tracing-subscriber = {version = "*", features = ["env-filter"]}
 tracing-logfmt = "*"
 tracing-log = "*"
 # appears to be required
